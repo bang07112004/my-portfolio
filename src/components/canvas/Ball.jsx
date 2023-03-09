@@ -40,7 +40,7 @@ const BallCanvas = ({ icon }) => {
     <Canvas frameLoop="demand" shadows gl={{ preserveDrawingBuffer: true }}>
       {" "}
       <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls enableZoom={false} />
+        <OrbitControls enablePan={false} enableZoom={false} />
         <Ball imgUrl={icon} />
       </Suspense>
       <Preload all />
